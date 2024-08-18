@@ -1,0 +1,108 @@
+@media (max-width: 1120px) {
+    .pricing__cards {
+        flex-direction: column;
+    }
+
+    .pricing__card__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 990px) {
+    .header__burger {
+        position: relative;
+        z-index: 1;
+        display: flex !important;
+    }
+
+    .header__nav {
+        position: fixed;
+        padding-top: 50px;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #E56B6F;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.5s ease;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: center;
+
+        .header__nav-item a {
+            color: #FFF
+        }
+    }
+
+    .about__container {
+        padding-top: 60px !important;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about__illustration {
+        min-width: 320px !important;
+        min-height: 340px !important;
+        order: 2;
+    }
+
+    .about-pc__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-pc__img {
+        min-width: 320px !important;
+        min-height: 360px !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__content  {
+        max-width: none !important;
+        padding-bottom: 20px;
+    }
+
+    .hero__img {
+        min-width: 0 !important;
+        min-height: 0 !important;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__nav {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .header__logo {
+        max-width: 240px;
+    }
+
+    .abot-pc__content {
+        max-width: none !important;
+        max-height: none !important;
+    }
+}

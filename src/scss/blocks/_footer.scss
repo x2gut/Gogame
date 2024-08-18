@@ -1,0 +1,37 @@
+.footer {
+    border-top: 1px solid #816F8C;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    max-width: 238px;
+    max-height: 65px;
+}
+.footer__text {
+    color: #826F8C;
+    font-size: 16px;
+}
+.footer__socials {
+    display: flex;
+    gap: 18px;
+
+    & li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        background-color: #FCD8CB;
+        border-radius: 100%;
+        cursor: pointer;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

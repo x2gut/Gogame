@@ -1,0 +1,37 @@
+@mixin gradientAnimation( $start, $end, $transTime ){
+    background-size: 100%;
+    background-image: linear-gradient($start, $end);
+    position: relative;
+    z-index: 100;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease;
+    &:before {
+        background-image: linear-gradient($end, $start);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        border-radius: 25px;
+        transition: opacity $transTime;
+        z-index: -2;
+    }
+    &:hover {
+        box-shadow: 5px 5px 50px rgba($color: #7367BE, $alpha: 0.3);
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.btn {
+    color: #FFF;
+    background: linear-gradient(to right, #4499D9, #7367BE);
+    padding: 14px 18px;
+    border-radius: 25px;
+
+    @include gradientAnimation(#4499D9, #7367BE, 0.3s)
+}

@@ -1,0 +1,60 @@
+.about-pc {
+  background-image: url("/src/img/about-pc_bg.png");
+}
+.about-pc__container {
+  padding-top: 113px;
+  padding-bottom: 92px;
+  display: flex;
+  gap: 95px;
+}
+
+.abot-pc__content {
+  max-width: 530px;
+  max-height: 420px;
+}
+.about-pc__subtitle {
+  margin-bottom: 30px;
+}
+.about-pc__title {
+  color: #eb8382;
+  margin-bottom: 25px;
+}
+.about-pc__text {
+  color: #826f8c;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 39px;
+}
+
+.about-pc__img {
+  position: relative;
+  max-width: 633px;
+  max-height: 566px;
+  min-width: 511px;
+  min-height: 456px;
+}
+.about-pc__img__gears {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-55%, 30%);
+  width: 40%;
+
+  & img {
+    width: 70%;
+    height: auto;
+    animation: spin 13s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
